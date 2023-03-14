@@ -1,12 +1,12 @@
 ---
-title: Unidiffuser
+title: UniDiffuser
 emoji: 😻
 colorFrom: gray
 colorTo: green
-sdk: gradio
-sdk_version: 3.20.1
+sdk: docker
 app_file: app.py
 pinned: false
+license: other
 ---
 
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
