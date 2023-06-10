@@ -10,3 +10,5 @@ license: other
 ---
 
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+
+https://arxiv.org/abs/2303.06555

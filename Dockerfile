@@ -32,13 +32,13 @@ WORKDIR ${HOME}/app
 
 RUN curl https://pyenv.run | bash
 ENV PATH=${HOME}/.pyenv/shims:${HOME}/.pyenv/bin:${PATH}
-ARG PYTHON_VERSION=3.10.10
+ARG PYTHON_VERSION=3.10.11
 RUN pyenv install ${PYTHON_VERSION} && \
     pyenv global ${PYTHON_VERSION} && \
     pyenv rehash && \
     pip install --no-cache-dir -U pip setuptools wheel
 
-RUN pip install --no-cache-dir -U torch==1.13.1 torchvision==0.14.1
+RUN pip install --no-cache-dir -U torch==2.0.1 torchvision==0.15.2
 COPY --chown=1000 requirements.txt /tmp/requirements.txt
 RUN pip install --no-cache-dir -U -r /tmp/requirements.txt
 
